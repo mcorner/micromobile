@@ -1,0 +1,80 @@
+{
+  "name": "base",
+  "version": "1.0.3",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "branch-cordova-sdk": "^2.6.11",
+    "cordova-android": "^6.2.3",
+    "cordova-browser": "^5.0.1",
+    "cordova-icon": "^0.10.0",
+    "cordova-ios": "^4.5.3",
+    "cordova-plugin-android-idfa": "git+https://github.com/mcorner/cordova-plugin-android-idfa.git",
+    "cordova-plugin-battery-status": "^1.2.4",
+    "cordova-plugin-camera": "^2.4.1",
+    "cordova-plugin-compat": "^1.2.0",
+    "cordova-plugin-customurlscheme": "^4.3.0",
+    "cordova-plugin-device": "^1.1.6",
+    "cordova-plugin-device-motion": "git+https://github.com/mcorner/cordova-plugin-device-motion.git",
+    "cordova-plugin-dialogs": "~1.3.2",
+    "cordova-plugin-geolocation": "^2.4.3",
+    "cordova-plugin-gyroscope": "git+https://github.com/mcorner/cordova-plugin-gyroscope.git",
+    "cordova-plugin-whitelist": "1",
+    "device": "^0.3.8",
+    "imagesloaded": "^4.1.3",
+    "jquery": "^3.2.1",
+    "micromobile-lib": "git+https://github.com/mcorner/micromobile-lib.git",
+    "phonegap-plugin-push": "git+https://github.com/mcorner/phonegap-plugin-push.git",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-select": "^1.0.0-rc.5"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browserify-css": "^0.10.1",
+    "envify": "^4.1.0",
+    "eslint": "^3.19.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-react": "^7.3.0",
+    "minifier": "^0.8.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "cordova": {
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "plugins": {
+      "cordova-plugin-device-motion": {},
+      "cordova-plugin-dialogs": {},
+      "cordova-plugin-gyroscope": {},
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-android-idfa": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-battery-status": {},
+      "branch-cordova-sdk": {
+        "BRANCH_KEY": "key_live_fgrCt10uQF9AfUJPeZLBSkecsqe2TUD3",
+        "URI_SCHEME": "micromobile"
+      },
+      "phonegap-plugin-push": {},
+      "cordova-plugin-camera": {
+        "CAMERA_USAGE_DESCRIPTION": "Users can upload photos as part of the experiments",
+        "PHOTOLIBRARY_USAGE_DESCRIPTION": "Users can upload photos as part of the experiments."
+      },
+      "cordova-plugin-geolocation": {
+        "GEOLOCATION_USAGE_DESCRIPTION": " "
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="YOUR BUNDLE ID" version="1.0.6" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>YOUR APP NAME</name>
+    <description>
+      Micromobile experiments for conducting wide-scale mobile experimentation and data collection.
+    </description>
+    <author email="YOUR EMAIL" href="YOUR WEBSITE">
+      YOUR NAME
+    </author>
+    <content src="/index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <resource-file src="google-services.json" target="google-services.json" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <hook src="scripts/beforePrepare.sh" type="before_prepare" />
+    <hook src="scripts/afterPrepare.sh" type="after_prepare" />
+    <hook src="scripts/beforeCompile.sh" type="before_compile" />
+    <branch-config>
+        <branch-key value="YOUR BRANCH KEY" />
+        <uri-scheme value="YOUR URI SCHEME" />
+        <link-domain value="YOUR APP LINK ID" />
+        <ios-team-release value="YOUR TEAM ID" />
+    </branch-config>
+    <engine name="android" spec="^6.2.3" />
+    <engine name="ios" spec="^4.5.3" />
+    <plugin name="cordova-plugin-device-motion" spec="git+https://github.com/mcorner/cordova-plugin-device-motion.git" />
+    <plugin name="cordova-plugin-dialogs" spec="~1.3.2" />
+    <plugin name="cordova-plugin-gyroscope" spec="git+https://github.com/mcorner/cordova-plugin-gyroscope.git" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <plugin name="cordova-plugin-android-idfa" spec="git+https://github.com/mcorner/cordova-plugin-android-idfa.git" />
+    <plugin name="cordova-plugin-device" spec="^1.1.6" />
+    <plugin name="cordova-plugin-battery-status" spec="^1.2.4" />
+    <plugin name="branch-cordova-sdk" spec="^2.6.11">
+        <variable name="BRANCH_KEY" value="YOUR BRANCH KEY" />
+        <variable name="URI_SCHEME" value="YOUR BRANCH URI SCHEME" />
+    </plugin>
+    <plugin name="phonegap-plugin-push" spec="git+https://github.com/mcorner/phonegap-plugin-push.git" />
+    <plugin name="cordova-plugin-camera" spec="^2.4.1">
+        <variable name="CAMERA_USAGE_DESCRIPTION" value="Users can upload photos as part of the experiments" />
+        <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="Users can upload photos as part of the experiments." />
+    </plugin>
+    <plugin name="cordova-plugin-geolocation" spec="^2.4.3">
+        <variable name="GEOLOCATION_USAGE_DESCRIPTION" value=" " />
+    </plugin>
+</widget>

@@ -1,0 +1,8 @@
+platforms
+plugins
+bower_components
+node_modules
+www
+!www/README.md
+config.json
+lambda-deploy.zip

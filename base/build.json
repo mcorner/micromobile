@@ -1,0 +1,18 @@
+{
+  "ios": {
+    "debug": {
+      "codeSignIdentity": "iPhone Developer",
+      "developmentTeam": "PW4Q8885U7",
+      "packageType": "development",
+      "provisioningProfile": "ad52fba9-67f7-4602-adc5-d3db2029e730",
+      "iCloudContainerEnvironment": "Development"
+    },
+    "release": {
+      "codeSignIdentity": "iPhone Developer",
+      "developmentTeam": "PW4Q8885U7",
+      "packageType": "app-store",
+      "iCloudContainerEnvironment": "Production",
+      "provisioningProfile": "d80e70c2-2740-4487-bce1-8b59af95cfc8"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "apiHost": "API HOST HERE",
+  "syncResultPath": "/experiment/result",
+  "pushRegPath": "/push/registration",
+  "eventPath": "/event",
+  "impressionPath": "/impression",
+}
