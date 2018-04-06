@@ -5,3 +5,5 @@ Code for: MicroMobile: Leveraging Mobile Advertising for Large-Scale Experimenta
 # MicroMobile experiments
 
 The app is in base/  cd there and follow the README
+
+Also requires: https://github.com/mcorner/micromobile
